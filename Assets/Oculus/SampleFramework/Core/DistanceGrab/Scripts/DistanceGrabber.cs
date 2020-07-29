@@ -187,10 +187,10 @@ namespace OculusSampleFramework
                         m_grabbedObjectRotOff = m_grabbedObj.snapOffset.rotation * m_grabbedObjectRotOff;
                     }
                 }
+                Shooting.PistolDetected = true;
 
             }
         }
-
         protected override void MoveGrabbedObject(Vector3 pos, Quaternion rot, bool forceTeleport = false)
         {
             if (m_grabbedObj == null)

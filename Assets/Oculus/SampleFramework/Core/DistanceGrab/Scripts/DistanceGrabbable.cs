@@ -76,8 +76,7 @@ namespace OculusSampleFramework
                 m_renderer.SetPropertyBlock(m_mpb);
             }
         }
-
-        public void SetColor(Color focusColor)
+		public void SetColor(Color focusColor)
         {
             m_mpb.SetColor(m_materialColorField, focusColor);
             m_renderer.SetPropertyBlock(m_mpb);
