@@ -9,11 +9,9 @@ public class Shooting: MonoBehaviour
 	public GameObject RightHand;
 	public Transform BarrelLocation;
 	public Transform BarrelLocation2;
-
-	public static bool PistolDetected;
 	public void Update()
 	{
-		if (OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger)&& PistolDetected) 
+		if (OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger)) 
 		{
 			Rigidbody NewBulletRigidbody = Instantiate(BulletPrefab, BarrelLocation.position, Quaternion.identity).GetComponent<Rigidbody>();
 			NewBulletRigidbody.AddForce((BarrelLocation2.position - BarrelLocation.position)*50, ForceMode.Impulse);
