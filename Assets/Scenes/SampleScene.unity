@@ -809,9 +809,10 @@ GameObject:
   - component: {fileID: 474565176}
   - component: {fileID: 474565175}
   - component: {fileID: 474565174}
+  - component: {fileID: 474565178}
   m_Layer: 0
   m_Name: Lamp 2
-  m_TagString: Untagged
+  m_TagString: Lamp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -890,6 +891,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &474565178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474565173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e43a83b8ed37be4f889b5d23398fdb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &569887656
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1398,6 +1411,25 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 1910140033}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &953900506 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1173658494909946, guid: 6fae51a9f4170334e8639e8dbfc0a54b,
+    type: 3}
+  m_PrefabInstance: {fileID: 463052162}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &953900511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953900506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00aedccb97b2b794688edafa0a820aad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DrawLine: {fileID: 1533291792}
 --- !u!1 &1038369778
 GameObject:
   m_ObjectHideFlags: 0
@@ -1412,7 +1444,7 @@ GameObject:
   - component: {fileID: 1038369779}
   m_Layer: 0
   m_Name: Lamp
-  m_TagString: Untagged
+  m_TagString: Lamp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2287,6 +2319,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!120 &1533291792 stripped
+LineRenderer:
+  m_CorrespondingSourceObject: {fileID: 120006741097097638, guid: a9d2de84afb308a4796cc671d3432b4d,
+    type: 3}
+  m_PrefabInstance: {fileID: 569887656}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1550131042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2533,8 +2571,8 @@ MonoBehaviour:
     type: 3}
   CenterOfCircleSpawn: {x: 0, y: 1.5}
   Radius: 1
-  MaxTargets: 3
-  Speed: 0
+  MaxTargets: 4
+  Speed: 0.4
 --- !u!4 &1788295134
 Transform:
   m_ObjectHideFlags: 0

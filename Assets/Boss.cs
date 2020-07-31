@@ -8,7 +8,5 @@ public class Boss : MonoBehaviour
 
 	private void OnCollisionEnter(Collision collision)
 	{
-		DamageSoundEffect.Play();
-		Destroy(collision.gameObject);
 	}
 }
