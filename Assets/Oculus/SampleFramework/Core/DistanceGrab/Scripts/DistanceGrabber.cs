@@ -74,7 +74,7 @@ namespace OculusSampleFramework
 
         DistanceGrabber m_otherHand;
 
-        protected DistanceGrabbable m_target;
+        public DistanceGrabbable m_target;
         // Tracked separately from m_target, because we support child colliders of a DistanceGrabbable.
         protected Collider m_targetCollider;
 

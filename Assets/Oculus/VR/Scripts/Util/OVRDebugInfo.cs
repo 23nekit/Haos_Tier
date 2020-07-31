@@ -40,7 +40,7 @@ public class OVRDebugInfo : MonoBehaviour
 
     #region Debug strings
 	string strRiftPresent            = null; // "VR DISABLED"
-    string strFPS                    = null; // "FPS: 0";
+    public string strFPS                    = null; // "FPS: 0";
     string strIPD                    = null; // "IPD: 0.000";
     string strFOV                    = null; // "FOV: 0.0f";
     string strHeight                 = null; // "Height: 0.0f";

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Lamp
   - Bullet
+  - Pistol
   layers:
   - Default
   - TransparentFX

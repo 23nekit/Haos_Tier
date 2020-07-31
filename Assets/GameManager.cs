@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class GameManager : MonoBehaviour
     public AudioSource BossSoundEffect;
     public TargetManager TargetManagerObject;
 
-    public void StartGame() 
+	public void StartGame()
     {
         BossView.Play();
         BossSoundEffect.Play();
